@@ -1,0 +1,165 @@
+/*
+ * buttonup
+ *
+ * Inline style rules for cleaner, faster code
+ * Using LESS
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+
+
+
+
+/*
+ * Colors
+ * 
+ * Default Colors used by many different applications
+ *
+ *
+ *
+ *
+ */
+
+@num-colors: 8;
+
+//Color Hex Values
+@twitter-blue: #4099FF;
+@facebook-blue: #3B5998;
+@pinterest-red: #C92228;
+
+.twitter-blue {
+    background-color: @twitter-blue;
+}
+
+.twitter-blue-text {
+    color: @twitter-blue;    
+}
+
+.facebook-blue {
+    background-color: @facebook-blue;    
+}
+
+.facebook-blue-text {
+    color: @facebook-blue;    
+}
+
+
+/*
+ * Layout
+ * 
+ * Control Layout With Simple CSS rules
+ *
+ *
+ *
+ *
+ */
+
+@iteration-count: 10;
+
+//Generic Padding
+.generate-padding(10);
+
+.generate-padding(@n, @i: 0) when (@i =< @n) {
+  .padding-@{i}0 {
+    padding: (@i * 10);
+  }
+  .generate-padding(@n, (@i + 1));
+}
+
+//Left Padding
+.generate-padding-left(10);
+
+.generate-padding-left(@n, @i: 0) when (@i =< @n) {
+  .padding-left-@{i}0 {
+    padding-left: (@i * 10);
+  }
+  .generate-padding-left(@n, (@i + 1));
+}
+
+//Right Padding
+.generate-padding-right(10);
+
+.generate-padding-right(@n, @i: 0) when (@i =< @n) {
+  .padding-right-@{i}0 {
+    padding-right: (@i * 10);
+  }
+  .generate-padding-right(@n, (@i + 1));
+}
+
+// Top Padding
+.generate-padding-top(10);
+
+.generate-padding-top(@n, @i: 0) when (@i =< @n) {
+  .padding-top-@{i}0 {
+    padding-top: (@i * 10);
+  }
+  .generate-padding-top(@n, (@i + 1));
+}
+
+//Bottom Padding
+.generate-padding-bottom(10);
+
+.generate-padding-bottom(@n, @i: 0) when (@i =< @n) {
+  .padding-bottom-@{i}0 {
+    padding-bottom: (@i * 10);
+  }
+  .generate-padding-bottom(@n, (@i + 1));
+}
+
+//Generic margin
+.generate-margin(10);
+
+.generate-margin(@n, @i: 0) when (@i =< @n) {
+  .margin-@{i}0 {
+    margin: (@i * 10);
+  }
+  .generate-margin(@n, (@i + 1));
+}
+
+//Left margin
+.generate-margin-left(10);
+
+.generate-margin-left(@n, @i: 0) when (@i =< @n) {
+  .margin-left-@{i}0 {
+    margin-left: (@i * 10);
+  }
+  .generate-margin-left(@n, (@i + 1));
+}
+
+//Right margin
+.generate-margin-right(10);
+
+.generate-margin-right(@n, @i: 0) when (@i =< @n) {
+  .margin-right-@{i}0 {
+    margin-right: (@i * 10);
+  }
+  .generate-margin-right(@n, (@i + 1));
+}
+
+// Top margin
+.generate-margin-top(10);
+
+.generate-margin-top(@n, @i: 0) when (@i =< @n) {
+  .margin-top-@{i}0 {
+    margin-top: (@i * 10);
+  }
+  .generate-margin-top(@n, (@i + 1));
+}
+
+//Bottom margin
+.generate-margin-bottom(10);
+
+.generate-margin-bottom(@n, @i: 0) when (@i =< @n) {
+  .margin-bottom-@{i}0 {
+    margin-bottom: (@i * 10);
+  }
+  .generate-margin-bottom(@n, (@i + 1));
+}
+
