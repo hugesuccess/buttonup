@@ -27,6 +27,11 @@ Change the text color to popular social network colors
 Add padding to DOM element in multiples of 10 from 00 - 250
 
 ```
-.el {
-    padding: XXpx;
+<span class="padding-10"></span>
+```
+
+```
+span {
+    padding: 10px;
 }
+```
