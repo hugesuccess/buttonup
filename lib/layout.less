@@ -1,0 +1,112 @@
+/*
+ * Layout
+ * 
+ * Control Layout With Simple CSS rules
+ *
+ *
+ *
+ *
+ */
+
+@iteration-count: 10;
+
+//Generic Padding
+.generate-padding(@iteration-count);
+
+.generate-padding(@n, @i: 0) when (@i =< @n) {
+  .padding-@{i}0 {
+    padding: (@i * @iteration-count);
+  }
+  .generate-padding(@n, (@i + 1));
+}
+
+//Left Padding
+.generate-padding-left(@iteration-count);
+
+.generate-padding-left(@n, @i: 0) when (@i =< @n) {
+  .padding-left-@{i}0 {
+    padding-left: (@i * @iteration-count);
+  }
+  .generate-padding-left(@n, (@i + 1));
+}
+
+//Right Padding
+.generate-padding-right(@iteration-count);
+
+.generate-padding-right(@n, @i: 0) when (@i =< @n) {
+  .padding-right-@{i}0 {
+    padding-right: (@i * @iteration-count);
+  }
+  .generate-padding-right(@n, (@i + 1));
+}
+
+// Top Padding
+.generate-padding-top(@iteration-count);
+
+.generate-padding-top(@n, @i: 0) when (@i =< @n) {
+  .padding-top-@{i}0 {
+    padding-top: (@i * @iteration-count);
+  }
+  .generate-padding-top(@n, (@i + 1));
+}
+
+//Bottom Padding
+.generate-padding-bottom(@iteration-count);
+
+.generate-padding-bottom(@n, @i: 0) when (@i =< @n) {
+  .padding-bottom-@{i}0 {
+    padding-bottom: (@i * @iteration-count);
+  }
+  .generate-padding-bottom(@n, (@i + 1));
+}
+
+//Generic margin
+.generate-margin(@iteration-count);
+
+.generate-margin(@n, @i: 0) when (@i =< @n) {
+  .margin-@{i}0 {
+    margin: (@i * @iteration-count);
+  }
+  .generate-margin(@n, (@i + 1));
+}
+
+//Left margin
+.generate-margin-left(@iteration-count);
+
+.generate-margin-left(@n, @i: 0) when (@i =< @n) {
+  .margin-left-@{i}0 {
+    margin-left: (@i * @iteration-count);
+  }
+  .generate-margin-left(@n, (@i + 1));
+}
+
+//Right margin
+.generate-margin-right(@iteration-count);
+
+.generate-margin-right(@n, @i: 0) when (@i =< @n) {
+  .margin-right-@{i}0 {
+    margin-right: (@i * @iteration-count);
+  }
+  .generate-margin-right(@n, (@i + 1));
+}
+
+// Top margin
+.generate-margin-top(@iteration-count);
+
+.generate-margin-top(@n, @i: 0) when (@i =< @n) {
+  .margin-top-@{i}0 {
+    margin-top: (@i * @iteration-count);
+  }
+  .generate-margin-top(@n, (@i + 1));
+}
+
+//Bottom margin
+.generate-margin-bottom(@iteration-count);
+
+.generate-margin-bottom(@n, @i: 0) when (@i =< @n) {
+  .margin-bottom-@{i}0 {
+    margin-bottom: (@i * @iteration-count);
+  }
+  .generate-margin-bottom(@n, (@i + 1));
+}
+
