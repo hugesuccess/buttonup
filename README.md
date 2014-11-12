@@ -30,8 +30,26 @@ Add padding to DOM element in multiples of 10 from 00 - 250
 <span class="padding-10"></span>
 ```
 
+returns
+
 ```
 span {
     padding: 10px;
+}
+```
+
+### .margin-XX
+
+Add margin to DOM element in multiples of 10 from 00 - 250
+
+```
+<span class="margin-10"></span>
+```
+
+returns
+
+```
+span {
+    margin: 10px;
 }
 ```
