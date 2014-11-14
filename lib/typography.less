@@ -1,0 +1,13 @@
+@size-count: 75;
+
+
+//Generic Padding
+.generate-font-size(@size-count);
+
+.generate-font-size(@n, @i: 0) when (@i =< @n) {
+  .font-size-@{i} {
+    font-size: unit(@i, px);
+  }
+  .generate-font-size(@n, (@i + 1));
+}
+
