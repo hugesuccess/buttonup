@@ -53,3 +53,27 @@ span {
     margin: 10px;
 }
 ```
+
+## CSS Rules
+
+letter-spacing
+line-height
+text-decoration
+text-transform
+vertical-align
+
+text-decoration
+
+list-style-type
+
+margin
+border
+padding
+
+border
+
+margin
+padding
+
+positioning
+
