@@ -1,3 +1,18 @@
+/*
+ *
+ * Buttonup -- Typography
+ *
+ *
+ * Font Size
+ * Letter Spacing
+ * line-height
+ * text decoration
+ * text transform
+ * vertical align
+ * font
+ * 
+ */
+
 @size-count: 75;
 
 
@@ -11,3 +26,40 @@
   .generate-font-size(@n, (@i + 1));
 }
 
+@georgia: 'Georgia';
+@palentino: 'Palatino Linotype';
+@times: 'Times New Roman';
+@arial: 'Arial';
+@comic: 'Comic Sans MS';
+@tahoma: 'Tahoma';
+@trebuchet: 'Trebuchet MS';
+@verdana: 'Verdana';
+@courier: 'Courier New';
+@lucida: 'Lucida Console';
+@colors: 'palentino', 'times', 'arial', 'georgia', 'comic', 'tahoma', 'verdana', 'courier', 'lucida';
+
+.-(@i: length(@colors)) when (@i > 0) {
+    @name: e(extract(@colors, @i));
+    .font-family-@{name} {font-family: @@name}
+    .-((@i - 1));
+} .-;
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.text-transform-uppercase {
+    text-transform: uppercase;
+}
+
+.text-transform-lowercase {
+    text-transform: lowercase;
+}
+
+.text-transform-capitalize {
+    text-transform: capitalize;
+}
+
+.list-style-type-none {
+    list-style-type:none;
+}
