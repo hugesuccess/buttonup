@@ -63,3 +63,12 @@
 .list-style-type-none {
     list-style-type:none;
 }
+
+@iterations: 8;
+.span-loop (@i) when (@i > 0) {
+    .font-weight-@{i}00 {
+        font-weight: ~"@{i}00";
+    }
+    .span-loop(@i - 1);
+}
+.span-loop (@iterations);

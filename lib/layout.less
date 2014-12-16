@@ -63,6 +63,19 @@
 }
 
 //Generic margin
+
+@margin-count: 25;
+
+//Generic Padding
+.generate-small-padding(@margin-count);
+
+.generate-small-padding(@n, @i: 0) when (@i =< @n) {
+  .margin-@{i} {
+    margin: (@i * 1px);
+  }
+  .generate-small-padding(@n, (@i + 1));
+}
+
 .generate-margin(@iteration-count);
 
 .generate-margin(@n, @i: 0) when (@i =< @n) {
